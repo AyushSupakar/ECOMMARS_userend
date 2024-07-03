@@ -128,13 +128,13 @@ export default function Page() {
                 <div className='pdmq ' >
                     <div className=" pddmq ">
 
-                        <div className=" flex h-screen overflow-auto p-2 m-2 flex-col font-sans text-lg gap-8 justify-around"> 
+                        <div className=" flex min-h-screen p-2 m-2 flex-col font-sans text-lg gap-2 justify-around"> 
 
                             <div className="flex justify-around manjubhai pdmq  "><div className="pimq justify-center ">
                                 <img className='h-80 w-56' src={product.imgurl} alt="" />
                             </div>
 
-                            <div className=""><div className="flex justify-center"><span className='font-bold text-2xl my-4 px-2 text-justify'>{product.prdname}</span></div>
+                            <div className=""><div className="flex justify-center"><span className='font-bold text-2xl my-2 px-2 text-justify'>{product.prdname}</span></div>
                             
                             <div className="flex flex-col">
                             <div className="flex manjubhai mx-2 items-center ">
@@ -167,7 +167,7 @@ export default function Page() {
 </div>
 
 
-<div className="flex manjubhai my-4 items-center px-2  justify-between mx-2 ">
+<div className="flex manjubhai my-2 items-center px-2  justify-between mx-2 ">
 <span className='font-bold text-xl' ><span className='font-bold text-lg' >Price: Rs.</span>{product.price}/-</span>
 {(disable)?(<div className="flex"><button className='btn-xprimary'> 
     <div className="flex items-center justify-between px-2 font-bold ">
@@ -192,7 +192,7 @@ export default function Page() {
                                 
                                     
                                     
-                                    <div className="flex items-center">
+                                    <div className="flex items-center my-2">
                                     <span className='text-justify ' >{product.desc}</span></div>
 
                             </div>
@@ -204,7 +204,7 @@ export default function Page() {
 
                     </div> 
 
-                    <div className=" pdmq"><div className=" pddmqx">
+                    <div className=" pdmq flex-grow w-"><div className=" pddmqx">
                 
                 <div className="p-2">
                     <h1 className="font-bold text-xl">Write a Review</h1>

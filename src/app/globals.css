@@ -746,8 +746,11 @@ td{ border-collapse:separate;}
    .pdmq{
      @apply m-2 p-2 w-full;
    }
+   .pddmqx{
+    @apply m-2 p-2 w-full;
+  }
    .pddmq{
-     @apply flex flex-col shdw h-screen m-1 p-2 justify-center;
+     @apply flex flex-col shdw  m-1 p-2 justify-center;
    }
    .pimq{
      @apply flex flex-col ;
@@ -774,7 +777,10 @@ td{ border-collapse:separate;}
 }
 
 @media screen and (max-width: 320px){
-  .yoshi{
+ 
+  .pddmqx{
+    @apply m-2 p-2 w-full;
+  } .yoshi{
     @apply m-1 w-full p-1
   }
   .chhotadon{
