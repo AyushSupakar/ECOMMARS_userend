@@ -66,18 +66,7 @@ function fetchcartdetails(){
 }
 
   useEffect(() => {
-   const fetchcartdetailss =()=>{if (session?.user?.email) {
-    axios.get('/api/cart/' + session?.user?.email).then(res => {
-      const cartItems = res.data?.cartstate || [];
-      Promise.all(
-        cartItems.map(item => axios.get('/api/products/' + item).then(res => res.data))
-      ).then(products => {
-        setParr(products);
-        const totalPrice = products.reduce((sum, product) => sum +  Number(product.price), 0);
-        setTotprice(totalPrice);
-      });
-    });
-  }};
+    fetchcartdetails();
   }, [session]);
 
   if (parr.length === 0) {
