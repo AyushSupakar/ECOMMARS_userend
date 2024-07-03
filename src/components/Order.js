@@ -4,30 +4,27 @@ export default function Order(props) {
     const {order} = props;
   return (
     <div className="flex flex-col items-center">
-        <div className="flex justify-center items-center"><div className=" cbg-blue-900 text-white shdw mx-8 mt-4 justify-center items-center text-center mb-2 rounded-xl p-4 h-5/6 justify-around px-4">
+        <div className="flex justify-center items-center"><div className=" cbg-blue-900 text-white shdw mx-2 mt-4 justify-center items-center text-center mb-2 rounded-xl p-4 h-5/6 justify-around px-4">
         
-        <span className=" text-xl font-bold p-1">Order No. {order._id}</span>
+        <span className="chhotadon">Order No. {order._id}</span>
 
       </div></div>    {
                 
                 order?.line_items?.map(each=>{
-                    
-                
-                
 
                     return(
                     
-                   <div key={each.price_data.product_data.pid} className='m-4 w-4/6 p-4'>
-            <div className="flex shdw m-2 p-4">
-              <div className="flex w-1/4">
+                   <div key={each.price_data.product_data.pid} className='yoshi'>
+            <div className="simi">
+              <div className="paanwala">
                 <img className='h-48 w-32' src={each.price_data.product_data.image} alt="" />
               </div>
-              <div className="w-3/4 flex flex-col justify-around font-sans text-lg">
+              <div className="popatlaal">
                 <div className="flex">
                   <span className='font-bold text-xl'>{each.price_data.product_data.name}</span>
                 </div>
                
-                <div className="flex justify-between items-center">
+                <div className="poonawala">
 
                 <div className="flex items-center justify-between px-2 font-bold"><span className='font-bold text-xl'>
                     <span className='font-bold text-lg'>Price: Rs.</span>{each.price_data.product_data.price}/-
@@ -93,7 +90,7 @@ export default function Order(props) {
                 })
             }
 
-<div className='m-4 w-4/6 p-4'>
+<div className='yoshi'>
             <div className="flex justify-between  items-center shdw m-2 p-4">
 
 
@@ -109,7 +106,7 @@ export default function Order(props) {
             </div>
         </div>
 
-        <div className='m-4 w-4/6 p-4'>
+        <div className='yoshi'>
             <div className="flex flex-col justify-between shdw m-2 p-4 ">
 
               

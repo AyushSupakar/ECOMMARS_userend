@@ -508,6 +508,9 @@ td{ border-collapse:separate;}
 .lgsm{
   @apply text-lg
 }
+.simi{
+  @apply flex shdw m-2 p-4
+}
 @media screen and (min-width: 921px) and (max-width: 1395px) {
   .infinity{
     @apply flex flex-col shdw p-4 m-8 w-2/3
@@ -526,8 +529,32 @@ td{ border-collapse:separate;}
 
 
 }
-
+.poonawala{
+  @apply flex justify-between items-center
+}
+.popatlaal{
+  @apply w-3/4 flex flex-col justify-around font-sans text-lg
+}
+.yoshi{
+  @apply m-4 w-4/6 p-4
+}
 @media screen and (min-width: 641px) and (max-width: 920px) {
+  .yoshi{
+    @apply m-2 w-5/6 p-2
+  }
+  .chhotadon{
+    @apply text-lg font-bold p-1
+  }
+  .popatlaal{
+    @apply w-full flex flex-col justify-center font-sans text-base px-2 text-justify
+  }
+  .paanwala{
+    @apply flex w-1/2 justify-center
+   }
+  
+  .simi{
+    @apply flex-col items-center shdw m-2 p-4
+  }
   .infinity{
     @apply flex flex-col shdw p-4 m-8 w-2/3
   }
@@ -602,8 +629,32 @@ td{ border-collapse:separate;}
   }
  }
 
+ .paanwala{
+  @apply flex w-1/4
+ }
+
  
 @media screen and (max-width: 640px) and (min-width:321px) {
+  .yoshi{
+    @apply m-2 w-full p-2
+  }
+  .chhotadon{
+    @apply text-base font-bold p-1
+  }
+  
+  .popatlaal{
+    @apply w-full flex flex-col justify-center font-sans text-base px-2 text-justify
+  }
+  .poonawala{
+    @apply flex flex-col justify-center items-center gap-2
+  }
+  .paanwala{
+    @apply flex justify-center w-3/4
+   }
+  
+  .simi{
+    @apply flex-col items-center shdw m-2 p-4
+  }
   .lgsm{
     @apply text-base
   }
@@ -718,8 +769,31 @@ td{ border-collapse:separate;}
     @apply flex m-4 flex-wrap justify-evenly items-center flex-grow p-1 px-2
   }
 }
+.chhotadon{
+  @apply  text-xl font-bold p-1
+}
 
 @media screen and (max-width: 320px){
+  .yoshi{
+    @apply m-1 w-full p-1
+  }
+  .chhotadon{
+    @apply  text-base font-bold p-1
+  }
+  
+  .popatlaal{
+    @apply w-full flex flex-col justify-center font-sans text-base px-2 text-justify
+  }
+  .poonawala{
+    @apply flex flex-col justify-center items-center gap-2
+  }
+  .paanwala{
+    @apply flex w-full
+   }
+  
+  .simi{
+    @apply flex-col items-center shdw m-2 p-4
+  }
   .lgsm{
     @apply text-sm
   }
