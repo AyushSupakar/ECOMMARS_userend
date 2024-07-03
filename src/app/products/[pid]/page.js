@@ -130,7 +130,7 @@ export default function Page() {
 
                         <div className=" flex h-screen overflow-auto p-2 m-2 flex-col font-sans text-lg gap-8 justify-around"> 
 
-                            <div className="flex justify-around manjubhai pdmq mmm  "><div className="pimq justify-center ">
+                            <div className="flex justify-around manjubhai pdmq  "><div className="pimq justify-center ">
                                 <img className='h-80 w-56' src={product.imgurl} alt="" />
                             </div>
 
