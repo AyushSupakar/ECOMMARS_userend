@@ -1,0 +1,848 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+svg {
+  height: 28px;
+  
+}
+.activesvg{
+  fill: #000000;
+}
+
+.abc{
+  margin: 1rem ;
+  padding-left: 1rem;
+  padding-top: 1rem;
+
+}
+.def{
+  display:flex;
+  padding:1rem;
+
+}
+.xyz{
+  
+  @apply items-center py-1 flex flex-grow items-center justify-center
+ 
+}
+.xyzh{
+  
+  @apply items-center py-1 flex flex-grow items-center justify-center
+ 
+}
+.lmn{
+
+  padding-right:1rem;
+  margin:1rem;
+}
+
+input, textarea, select{
+  @apply border-2 border-gray-300 rounded-md px-1 mb-1 text-black;
+}
+label{
+  @apply text-gray-600
+}
+input:hover , textarea:hover, select:hover{
+  border-color:  rgb(108, 108, 233);
+  @apply border-2;
+}
+label{
+  @apply px-1 mt-1
+}
+.prettytext{
+  color: #bc69ff;
+  @apply text-center px-4 font-bold text-xl
+}
+.btn-primary {
+  background-color: #bc69ff;
+  border-radius: 15px;
+  border-color: white;
+  border-width: 4px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+	transition: 1s all;
+  
+
+  @apply px-1 my-1 text-white px-4 text-sm  p-2 rounded-2xl;
+}
+
+.btn-zprimary{
+  background-color: #bc69ff;
+  border-radius: 15px;
+  border-color: white;
+  border-width: 4px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+	transition: 1s all;
+  
+
+  @apply px-1 my-1 text-white px-2 p-2 rounded-2xl text-base
+}
+
+
+.btn-nprimary {
+  background-color: #10d15d;
+  border-radius: 15px;
+  border-color: white;
+  border-width: 4px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+	transition: 1s all;
+  
+
+  @apply text-white m-0 text-center flex items-center rounded-2xl font-bold text-xl p-2
+}
+.btn-yprimary {
+  background-color: #ff9e0d;
+  border-radius: 15px;
+  border-color: white;
+  border-width: 4px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+	transition: 1s all;
+  
+
+  @apply px-1 my-1 text-white px-4 p-2 rounded-2xl
+}
+
+.btn-mprimary {
+  background-color: #fc6284;
+  border-radius: 15px;
+  border-color: white;
+  border-width: 4px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+	transition: 1s all;
+  
+
+  @apply text-white text-center m-0 flex items-center rounded-2xl font-bold text-xl p-2
+}
+.btn-xprimary {
+  background-color: #8e8297;
+  border-radius: 15px;
+  border-color: white;
+  border-width: 4px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+	transition: 1s all;
+  
+
+  @apply px-1 my-1 text-white px-4 p-2 rounded-2xl
+}
+
+.fbtn-primary {
+  background-color: #6c6ce9;
+  border-radius: 10px;
+  border-color: white;
+  border-width: 4px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+	transition: 1s all;
+
+  @apply text-white px-2 p-1 rounded-xl my-1 text-base;
+}
+
+.shdw{
+  border-color: white;
+  border-width: 4px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+	transition: 1s all;
+}
+.shdw:hover{
+  border-color: white;
+  border-width: 4px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.33);
+	transition: 1s all;
+}
+.btn-primary:hover {
+  border-radius: 15px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.33);
+	transition: 0.5s all;
+  transform: scale(1.1); 
+  
+
+  @apply px-1 mt-2 text-white px-4 p-2 rounded-lg 
+}
+
+
+.btn-yprimary {
+  border-radius: 15px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.33);
+	transition: 0.5s all;
+  transform: scale(1.1); 
+
+  @apply px-1 my-1 text-white px-4 p-2 rounded-2xl
+}
+
+.btn-primary:hover {
+  border-radius: 15px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.33);
+	transition: 0.5s all;
+  transform: scale(1.1); 
+  
+
+  @apply px-1 mt-2 text-white px-4 p-2 rounded-lg 
+}
+
+
+.btn-primary:active {
+  border-radius: 15px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.33);
+	transition: 0.5s all;
+  transform: scale(0.9); 
+  
+
+  @apply px-1 mt-2 text-white px-4 p-2 rounded-lg 
+}
+
+.btn-mprimary:active {
+  border-radius: 15px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.33);
+	transition: 0.5s all;
+  transform: scale(0.9); 
+  
+
+  @apply px-1 mt-2 text-white rounded-lg 
+}
+
+
+.btn-yprimary:active {
+  border-radius: 15px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.33);
+	transition: 0.5s all;
+  transform: scale(0.9); 
+  
+
+  @apply px-1 mt-2 text-white md:px-4 sm:px-2 md:p-2 sm:p-1 rounded-lg 
+}
+
+
+
+.fbtn-primary:hover {
+  border-radius: 15px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.33);
+	transition: 0.5s all;
+  transform: scale(1.1); 
+  
+
+  @apply text-white px-2 p-1 rounded-xl my-1 text-base;
+}
+
+.fbtn-primary:active {
+  border-radius: 15px;
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.33);
+	transition: 0.5s all;
+  transform: scale(0.9); 
+  
+
+  @apply text-white px-2 p-1 rounded-xl my-1 text-base;
+}
+
+
+
+.rlink{
+  @apply md:text-base xl:text-lg lg:px-2 md:px-1 h-fit
+}
+.nlink{
+  @apply rounded-full w-8 h-8 p-1
+}
+
+.plink{
+  @apply rounded-full w-16 h-16 border-4 cborder-blue-900 p-1
+}
+.plink:hover {
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.33);
+	transition: 0.5s all;
+  transition: 0.5s all;
+  transform: scale(1.1); 
+ 
+}
+.plink:active {
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.33);
+	transition: 0.5s all;
+  transition: 0.5s all;
+  transform: scale(0.95); 
+ 
+}
+.rlink:active {
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+	transition: 0.5s all;
+  transition: 0.5s all;
+  transform: scale(0.9); 
+
+ 
+}
+
+
+.rlink:hover {
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.33);
+	transition: 0.5s all;
+  @apply rounded-lg
+
+ 
+}
+.rlink:active {
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.1);
+	transition: 0.5s all;
+  @apply rounded-lg
+
+ 
+}
+
+.bs{
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.33);
+  border-collapse:separate;
+  border-radius:6px;
+  @apply border-2 text-xl mx-2 my-4 px-2 py-2 rounded-xl;
+}
+
+
+table{
+  box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.33);
+  border-collapse:separate;
+  border-radius:6px;
+  @apply border-2 w-full m-2 my-4 p-2 rounded-xl;
+}
+thead{
+  background-color:#ffffff;
+  @apply text-gray-700;
+}
+tbody{
+  border-collapse:separate;
+}
+tr{
+  border-collapse:separate;
+}
+td{ border-collapse:separate;}
+.cborder-blue-900{
+  border-color:  rgb(108, 108, 233);
+  @apply text-xl
+}
+.eborder-blue-900{
+  border-color:  #6c6ce9;
+  @apply text-xl
+}
+.dborder-blue-900{
+  
+  @apply text-base border-gray-300;
+}
+.dborder-blue-900:hover{
+  border-color: rgb(108, 108, 233);
+  @apply text-base;
+}
+
+.cbg-blue-900{
+  background-color: rgb(108, 108, 233);
+}
+.cbg-red-900{
+  background-color: #e6445f;
+}
+.cbg-green-900{
+  background-color: #bc69ff;
+}
+.cbg-white{
+  background-color: rgb(255, 255, 255);
+}
+.ctext-blue-900{
+  color: #6459DD;
+}
+.btn-prim{
+  @apply bg-blue-900 text-white rounded-lg px-2;
+}
+.clink:hover{
+  transition: 0.5s all;
+  transform: scale(1.1); 
+}
+.clink:active{
+  transition: 0.5s all;
+  transform: scale(0.9); 
+}
+.mq{}
+.mqf{
+  @apply flex justify-center;
+}
+.iw{
+  @apply w-56 h-96;
+}
+.dw{
+  @apply w-3/5
+}
+.hmq{
+  @apply hidden
+}
+.pmq{
+  @apply flex items-center justify-center;
+}
+.pdmq{
+  @apply m-4 p-4 ;
+}
+.pddmq{
+  @apply flex shdw  m-2 p-4;
+}
+.pddmqx{
+  @apply flex flex-col shdw  m-2 p-4;
+}
+.pimq{
+  @apply flex ;
+}
+.mqpo{
+  @apply flex justify-between items-center my-6 lg:text-2xl md:text-xl sm:text-lg
+}
+
+.catmq{
+  @apply lg:text-2xl md:text-xl sm:text-lg font-bold p-1
+}
+.catimq{
+  @apply h-72 w-48;
+}
+.catnamemq{
+  @apply flex flex-col  justify-center items-center text-center 
+  font-sans text-lg;
+}
+.allcatmq{
+  @apply flex m-10 flex-wrap justify-evenly items-center flex-grow p-2 px-4
+}
+
+.anjubhai{
+
+}
+.kanjubhai{
+  @apply flex flex-col 
+}
+.manjubhai{
+
+}
+.sittubhai{
+  @apply p-2 mx-4 px-4
+}
+.jhunjhunwala{
+  @apply flex justify-center
+}
+.logosz{
+  @apply size-16
+}
+.amla{
+  @apply  h-96 w-56
+}
+.descmq{
+   
+}
+.namemq{
+   
+}
+.p8mq{
+  @apply p-8
+}
+.bvubhai{
+  @apply w-1/5 h-full
+}
+.b2bhai{
+  @apply w-4/5 mx-4 my-2 flex  flex-col  justify-around 
+  font-sans text-lg
+}
+.bhoi{
+  @apply flex shdw m-2 p-4
+}
+.judge{
+  @apply flex justify-between items-center
+}
+.badder{
+  @apply font-bold text-lg
+}
+.cigarette{
+  @apply flex justify-between items-center
+}
+.truth{
+  @apply flex w-1/5
+}
+.heart{
+  @apply w-4/5 flex flex-col justify-around font-sans text-lg m-2
+}
+.fish{
+  @apply flex shdw m-2 p-4
+}
+.stay{
+  @apply font-bold text-xl
+}
+.blinding{
+  @apply flex justify-between items-center
+}
+.infinity{
+  @apply flex flex-col shdw p-4 m-8 w-1/3
+}
+.smile{
+  @apply flex my-1
+}
+.again{
+}
+.see{
+  @apply flex justify-between
+}
+.srong{
+  @apply flex my-4 p-2 justify-between items-center
+}
+.coverdrive{
+  @apply rounded-full w-32 h-32
+}
+.lgsm{
+  @apply text-lg
+}
+@media screen and (min-width: 921px) and (max-width: 1395px) {
+  .infinity{
+    @apply flex flex-col shdw p-4 m-8 w-2/3
+  }
+  .badder{
+    @apply font-bold text-lg text-gray-600
+  }
+  .mq{
+  @apply hidden;
+ }
+ 
+ .pmq{
+  @apply flex flex-col items-center justify-center;
+}
+
+
+
+}
+
+@media screen and (min-width: 641px) and (max-width: 920px) {
+  .infinity{
+    @apply flex flex-col shdw p-4 m-8 w-2/3
+  }
+  .truth{
+    @apply flex w-2/5
+  }
+  .heart{
+    @apply w-3/5 flex flex-col justify-around font-sans text-lg m-2
+  }
+  .cigarette{
+    @apply flex flex-col justify-center items-start  gap-2
+  }
+  .badder{
+    @apply font-bold text-base text-gray-600
+  }
+  .bvubhai{
+    @apply w-2/5
+  }
+  .b2bhai{
+    @apply w-3/5 mx-4 my-2 flex  flex-col  justify-center text-justify
+    font-sans text-base
+  }
+  .bhoi{
+    @apply flex  items-center text-justify shdw m-2 p-4
+  }
+  .jhunjhunwala{
+  @apply flex flex-col items-center
+}
+  .anjubhai{
+    @apply flex-col items-start;
+   }
+  .mqf{
+   @apply flex-col;
+  }
+  .xyz{
+    @apply flex-col;
+  }
+  .iw{
+    @apply w-56 h-80
+  }
+  .dw{
+    @apply w-full
+  }
+  .hmq{
+    @apply flex;
+  }
+  .xyzh{
+  
+    @apply hidden items-center py-1 flex flex-grow items-center justify-center
+   
+  }
+  .pmq{
+    @apply flex flex-col items-center justify-center;
+  }
+  .pdmq{
+    @apply m-2 p-2 w-full;
+  }
+  .pddmqx{
+    @apply  m-2 p-2 ;
+  }
+  .pddmq{
+    @apply flex flex-col shdw h-screen m-1 p-2 justify-center items-center ;
+  }
+  .pimq{
+    @apply flex flex-col items-center;
+  }
+  .mqpo{
+    @apply flex flex-col justify-between items-center my-6 lg:text-2xl md:text-xl sm:text-lg
+  }
+  .catmq{
+    @apply text-lg font-bold px-0
+  }
+ }
+
+ 
+@media screen and (max-width: 640px) and (min-width:321px) {
+  .lgsm{
+    @apply text-base
+  }
+  .coverdrive{
+    @apply  w-24 h-24
+  }
+  .again{
+    @apply hidden
+  }
+  .see{
+    @apply flex flex-col gap-2 items-center
+  }
+  
+  .infinity{
+    @apply flex flex-col shdw p-4 m-8 w-full
+  }
+  .badder{
+    @apply font-bold text-lg text-gray-600
+  }
+  .stay{
+    @apply font-bold text-lg text-center text-justify
+  }
+  .fish{
+    @apply flex flex-col shdw m-2 p-4 items-center
+  }
+  .truth{
+    @apply flex w-full justify-center
+  }
+  .heart{
+    @apply w-full flex flex-col justify-around font-sans text-lg m-2
+  }
+  .cigarette{
+    @apply flex flex-col justify-center items-center  gap-2
+  }
+  .bvubhai{
+    @apply w-48
+  }
+  .b2bhai{
+    @apply w-4/5 mx-4 my-2 flex  flex-col  justify-center text-justify
+    font-sans text-base
+  }
+  .bhoi{
+    @apply flex flex-col  items-center text-justify shdw m-2 p-4
+  }
+  .p8mq{
+    @apply p-1
+  }
+  .descmq{
+    @apply text-sm
+  }
+  .logosz{
+    @apply size-12
+  }
+  .jhunjhunwala{
+    @apply flex flex-col items-center
+  }
+  .sittubhai{
+    @apply p-1 mx-2 px-2 w-full
+  }
+  .manjubhai{
+    @apply flex-col items-center ;
+  }
+  .anjubhai{
+    @apply flex-col items-start;
+   }
+  .mqf{
+    @apply flex-col;
+   }
+   .xyz{
+     @apply flex-col;
+   }
+   .iw{
+    @apply w-48 h-80
+   }
+   .dw{
+     @apply w-full
+   }
+   .hmq{
+     @apply flex;
+   }
+   .xyzh{
+   
+     @apply hidden items-center py-1 flex flex-grow items-center justify-center
+    
+   }
+   .pmq{
+     @apply flex flex-col items-center justify-center;
+   }
+   .pdmq{
+     @apply m-2 p-2 w-full;
+   }
+   .pddmq{
+     @apply flex flex-col shdw h-screen m-1 p-2 justify-center;
+   }
+   .pimq{
+     @apply flex flex-col ;
+   }
+   .mqpo{
+     @apply flex flex-col justify-between items-center my-6 text-base
+   }
+  .catmq{
+    @apply text-base font-bold px-0 mx-0
+  }
+  .catimq{
+    @apply h-56 w-40;
+  }
+  .catnamemq{
+    @apply flex flex-col justify-center items-center text-center 
+    font-sans text-base;
+  }
+  .allcatmq{
+    @apply flex m-4 flex-wrap justify-evenly items-center flex-grow p-1 px-2
+  }
+}
+
+@media screen and (max-width: 320px){
+  .lgsm{
+    @apply text-sm
+  }
+  .coverdrive{
+    @apply  w-16 h-16
+  }
+  .srong{
+    @apply flex flex-col my-2 p-2 gap-2 items-center text-center justify-center
+  }
+  .again{
+    @apply hidden
+  }
+  .see{
+    @apply flex flex-col gap-2 items-center
+  }
+  
+  .infinity{
+    @apply flex flex-col shdw p-4 m-8 w-full
+  }
+  .badder{
+    @apply font-bold text-base text-gray-600
+  }
+  .blinding{
+    @apply flex flex-col justify-center items-center
+  }
+  .stay{
+    @apply font-bold text-base text-center text-justify
+  }
+  .fish{
+    @apply flex flex-col shdw m-2 p-2 items-center
+  }
+  .truth{
+    @apply flex w-full justify-center
+  }
+  .heart{
+    @apply w-full flex flex-col justify-around font-sans text-base m-2
+  }
+  .cigarette{
+    @apply flex flex-col justify-center items-center  gap-2
+  }
+  .judge{
+    @apply flex flex-col justify-center items-center text-gray-600
+  }
+  .bvubhai{
+    @apply w-40 h-72
+  }
+  .b2bhai{
+    @apply w-full mx-2 my-2 flex  flex-col  justify-center text-justify
+    font-sans text-base
+  }
+  .bhoi{
+    @apply flex flex-col  items-center text-justify shdw m-2 p-2
+  }
+  .p8mq{
+    @apply p-1
+  }
+  .namemq{
+   @apply text-sm text-justify
+  }
+  .descmq{
+    @apply hidden
+  }
+  .logosz{
+    @apply size-12
+  }
+  .jhunjhunwala{
+    @apply flex flex-col items-center
+  }
+  .sittubhai{
+    @apply p-1 mx-1 px-2 w-full
+  }
+  .manjubhai{
+    @apply flex-col items-center ;
+  }
+  .anjubhai{
+    @apply flex-col items-start;
+   }
+  .mqf{
+    @apply flex-col;
+   }
+   .xyz{
+     @apply flex-col;
+   }
+   .iw{
+    @apply w-40 h-72
+   }
+   .dw{
+     @apply w-full
+   }
+   .hmq{
+     @apply flex;
+   }
+   .xyzh{
+   
+     @apply hidden items-center py-1 flex flex-grow items-center justify-center
+    
+   }
+   .pmq{
+     @apply flex flex-col items-center justify-center;
+   }
+   .pdmq{
+     @apply m-2 p-2 w-full;
+   }
+   .pddmq{
+     @apply flex flex-col shdw h-screen m-1 p-2 justify-center;
+   }
+   .pimq{
+     @apply flex flex-col ;
+   }
+   .mqpo{
+     @apply flex flex-col justify-between items-center my-6 text-base
+   }
+  .catmq{
+    @apply text-base font-bold px-0 mx-0
+  }
+  .catimq{
+    @apply h-48 w-36;
+  }
+  .catnamemq{
+    @apply flex flex-col justify-center items-center text-center 
+    font-sans text-base;
+  }
+  .allcatmq{
+    @apply flex m-4 flex-wrap justify-evenly items-center flex-grow p-1 px-2
+  }
+}
