@@ -19,7 +19,7 @@ export default function Page() {
   return (
     <NewLayout>
 
-      <div className="flex m-4 p-2 prettytext">Search Results for "{sterm}":</div>
+      <div className="flex m-4 p-2 prettytext">Search Results for &quot;{sterm}&quot;:</div>
 
 <div className="flex flex-col items-center justify-center">
             {searchresults.map(each=>{return(

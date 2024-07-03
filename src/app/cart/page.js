@@ -66,7 +66,18 @@ function fetchcartdetails(){
 }
 
   useEffect(() => {
-   fetchcartdetails();
+   const fetchcartdetailss =()=>{if (session?.user?.email) {
+    axios.get('/api/cart/' + session?.user?.email).then(res => {
+      const cartItems = res.data?.cartstate || [];
+      Promise.all(
+        cartItems.map(item => axios.get('/api/products/' + item).then(res => res.data))
+      ).then(products => {
+        setParr(products);
+        const totalPrice = products.reduce((sum, product) => sum +  Number(product.price), 0);
+        setTotprice(totalPrice);
+      });
+    });
+  }};
   }, [session]);
 
   if (parr.length === 0) {
@@ -100,7 +111,7 @@ function fetchcartdetails(){
 
 
           if((indx)>(smallest)){
-            return(<div></div>)
+            return(<div key="0"></div>)
           }
           
           else {return(
