@@ -128,13 +128,13 @@ export default function Page() {
                 <div className='pdmq ' >
                     <div className=" pddmq ">
 
-                        <div className=" flex min-h-screen p-2 m-2 flex-col font-sans text-lg gap-2 justify-around"> 
+                        <div className=" flex p-2 m-2 flex-col font-sans text-lg gap-2 justify-center"> 
 
                             <div className="flex justify-around manjubhai pdmq  "><div className="pimq justify-center ">
-                                <img className='h-80 w-56' src={product.imgurl} alt="" />
+                                <img className='imgwidth' src={product.imgurl} alt="" />
                             </div>
 
-                            <div className=""><div className="flex justify-center"><span className='font-bold text-2xl my-2 px-2 text-justify'>{product.prdname}</span></div>
+                            <div className="mila "><div className="flex justify-center"><span className='cutie'>{product.prdname}</span></div>
                             
                             <div className="flex flex-col">
                             <div className="flex manjubhai mx-2 items-center ">
@@ -192,7 +192,7 @@ export default function Page() {
                                 
                                     
                                     
-                                    <div className="flex items-center my-2">
+                                    <div className="flex items-start my-2">
                                     <span className='text-justify ' >{product.desc}</span></div>
 
                             </div>
@@ -204,7 +204,7 @@ export default function Page() {
 
                     </div> 
 
-                    <div className=" pdmq flex-grow w-"><div className=" pddmqx">
+                    <div className=" pdmq "><div className=" pddmqx">
                 
                 <div className="p-2">
                     <h1 className="font-bold text-xl">Write a Review</h1>

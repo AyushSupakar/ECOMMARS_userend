@@ -511,6 +511,12 @@ td{ border-collapse:separate;}
 .simi{
   @apply flex shdw m-2 p-4
 }
+.imgwidth{
+  @apply h-96 w-56
+}
+.mila{
+  @apply w-3/5
+}
 @media screen and (min-width: 921px) and (max-width: 1395px) {
   .infinity{
     @apply flex flex-col shdw p-4 m-8 w-2/3
@@ -525,7 +531,12 @@ td{ border-collapse:separate;}
  .pmq{
   @apply flex flex-col items-center justify-center;
 }
-
+.pddmqx{
+  @apply  m-2 p-4;
+}
+.pdmq{
+  @apply m-2 p-2 w-full;
+}
 
 
 }
@@ -539,6 +550,9 @@ td{ border-collapse:separate;}
   @apply m-4 w-4/6 p-4
 }
 @media screen and (min-width: 641px) and (max-width: 920px) {
+  .mila{
+    @apply w-full
+  }
   .yoshi{
     @apply m-2 w-5/6 p-2
   }
@@ -613,10 +627,10 @@ td{ border-collapse:separate;}
     @apply m-2 p-2 w-full;
   }
   .pddmqx{
-    @apply  m-2 p-2 ;
+    @apply  m-4 p-2 w-full;
   }
   .pddmq{
-    @apply flex flex-col shdw h-screen m-1 p-2 justify-center items-center ;
+    @apply flex flex-col shdw m-1 p-2 justify-center items-center ;
   }
   .pimq{
     @apply flex flex-col items-center;
@@ -627,6 +641,7 @@ td{ border-collapse:separate;}
   .catmq{
     @apply text-lg font-bold px-0
   }
+  
  }
 
  .paanwala{
@@ -635,6 +650,9 @@ td{ border-collapse:separate;}
 
  
 @media screen and (max-width: 640px) and (min-width:321px) {
+  .mila{
+    @apply w-full
+  }
   .yoshi{
     @apply m-2 w-full p-2
   }
@@ -771,13 +789,27 @@ td{ border-collapse:separate;}
   .allcatmq{
     @apply flex m-4 flex-wrap justify-evenly items-center flex-grow p-1 px-2
   }
+  .imgwidth{
+    @apply h-72 w-44
+  }
+  .cutie{
+    @apply font-bold text-xl my-2 px-1 text-justify
+  }
 }
 .chhotadon{
   @apply  text-xl font-bold p-1
 }
+.cutie{
+  @apply font-bold text-2xl my-2 px-2 text-justify
+}
 
 @media screen and (max-width: 320px){
- 
+  .cutie{
+    @apply font-bold text-lg my-2 px-1 text-justify
+  }
+  .mila{
+    @apply w-full
+  }
   .pddmqx{
     @apply m-2 p-2 w-full;
   } .yoshi{
@@ -904,7 +936,7 @@ td{ border-collapse:separate;}
      @apply m-2 p-2 w-full;
    }
    .pddmq{
-     @apply flex flex-col shdw h-screen m-1 p-2 justify-center;
+     @apply flex flex-col shdw m-1 p-2 justify-center;
    }
    .pimq{
      @apply flex flex-col ;
@@ -924,5 +956,8 @@ td{ border-collapse:separate;}
   }
   .allcatmq{
     @apply flex m-4 flex-wrap justify-evenly items-center flex-grow p-1 px-2
+  }
+  .imgwidth{
+    @apply h-72 w-40
   }
 }

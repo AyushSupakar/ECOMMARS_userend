@@ -13,13 +13,20 @@ export default function Home() {
       // Fetch categories
       axios.get('/api/categories').then((res) => {
         setcats(res.data);
+        
       }).catch(err => {
           console.error("Error fetching categories:", err);
       });
+     
 
       // Fetch products and set interval
       axios.get('/api/products').then((res) => {
         setprods(res.data);
+        setcurrprod(null)
+              const i = Math.floor(Math.random() * res.data.length);
+              
+
+              setcurrprod(res.data[i]);
 
           const interval = setInterval(() => {
               
@@ -29,7 +36,7 @@ export default function Home() {
 
               setcurrprod(res.data[i]);
               
-          }, 40000);
+          }, 60000);
 
           // Cleanup interval on component unmount
           return () => clearInterval(interval);
